@@ -28,7 +28,7 @@ makehelp: # grep for feasture extraction, sort to sort, gawk for report ternum
 
 pyhelp:
 	echo  -e "\n$(LOUD)./s.py$(SOFT) -OPTION"
-	python3.13 s.py -show
+	python3 s.py -show
 
 install : ## install cool stuff
     # everyone needs an onstall scriot
@@ -39,7 +39,7 @@ install : ## install cool stuff
 	sudo add-apt-repository ppa:deadsnakes/ppa  -y   
 	sudo add-apt-repository ppa:ytvwld/asciiquarium -y
 	sudo apt -y -qq update  
-	sudo apt -y -qq install python3.13 watch figlet asciiquarium cmatrix htop bsdgames
+	sudo apt -y -qq install python3 watch figlet asciiquarium cmatrix htop bsdgames
 
 asciiquarium : ## have fun
 	/usr/games/asciiquarium 
